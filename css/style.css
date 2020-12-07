@@ -1,0 +1,314 @@
+/* 
+Color Palette
+dk blue:    005482
+med. blue:  6492b2
+lt blue:    92c8e0 
+
+lt orange:      ffa500
+med orange:     f07522
+dk orange-red:  dc3826
+
+bckgrnd sand:   e7e5df
+
+lt gray:    bcbec0
+med gray:   616162
+dk gray:    333333
+
+*/
+  
+  
+  
+  
+  /* CHANGE THE SETTINGS FOR SKIP LOOK */
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+a.skip:focus{
+    top: 20px;
+    color: black;
+    text-decoration-style: solid;
+}
+
+
+
+*:focus{
+    border: 3px solid blue;
+    font-weight: bold;
+}
+a:hover{    
+    font-weight: bold;
+}
+
+/* !!!!!!!!!!!! */
+header{ 
+    background-color: #6492B2;
+}
+
+header h1{
+    text-align: center;
+}
+
+.nav_menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #005482;
+} 
+
+.nav_item{
+    padding: 20px;
+}
+
+.nav_item a{
+    text-decoration: none;
+    color: white;    
+
+}
+
+#current_page {
+    color: orange;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+/* !!!!!!!!!!!! */
+
+
+img {
+    width: 140px;
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!! */
+body{
+    font-family: Helvetica, sans-serif;
+    margin: 0 15px 0 15px;
+    padding: 0;
+    font-size: 16pt;
+    line-height: 1.2em;
+    background-color: #e7e5df;
+    /* background-image: url('...');   GOES HERE IF NEEDED */
+}
+
+h1{
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.5;
+}
+
+h2{
+    font-size: 1.0em;
+    text-align: center;
+    padding: 20px 0 5px 0;
+}
+
+
+p {
+    padding: 5px;
+    text-align: left;
+    /* width: 85%; */
+    margin: auto;
+}
+
+.float_l {float: left; margin-right: 20px;}
+.float_r {float: right; margin-left: 20px;}
+
+
+/* Background color classes */
+
+.ltbluebckgrnd { background-color: #92c8e0;}
+.mdorngbckgrnd { background-color: #f07522;}
+
+
+
+
+/* !!!!! image borders !!!!! */
+
+.ltgrayborder {border: 10px solid #bcbec0;}
+.mdgrayborder {border: 10px solid #616162;}
+.dkgrayborder {border: 10px solid #333333;}
+
+
+.ltblueborder {border: 10px solid #92c8e0;}
+.mdblueborder {border: 10px solid #6492b2;}
+.dkblueborder {border: 10px solid #005482;}
+
+.ltorngborder {border: 10px solid #ffa500;}
+.mdorngborder {border: 10px solid #f07522;}
+.dkorngborder {border: 10px solid #dc3826;}
+
+
+
+
+
+
+/* !!!!!cross-stitch gallery!!!!!!!! */
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 140px 140px;
+    grid-template-rows: repeat(12, auto);
+    grid-column-gap: 70px;
+    grid-row-gap: 5px;
+    justify-content: start;
+}
+
+.cs_chickens{ grid-column: 1/2; grid-row: 1/2; }
+
+.cs_mayan_numbers{ grid-column: 2/3; grid-row: 1/3; }
+
+.cs_peacock_kit{ grid-row: 2/4; grid-column: 1/2; }
+
+.cs_damaskpattern{ grid-row: 3/4; grid-column: 2/3; }
+
+.cs_ecs_sampler{ grid-row: 4/5; grid-column: 1; 
+    min-height: 160px;}
+.cs_ecs_sampler img {width: 370px;}
+
+.cs_mondrian{ grid-row: 5/6; grid-column: 1/2; }
+
+.cs_flowervase{ grid-row: 5/7; grid-column: 2/3; }
+
+.cs_stork{ grid-row: 6/7; grid-column: 1/2; }
+
+.cs_queenofhearts{ grid-row: 7/9; grid-column: 1/3; }
+.cs_queenofhearts img{width: 370px;}
+
+.cs_swallow2{ grid-row: 10/11; grid-column: 1/3; }
+.cs_swallow2 img{width: 370px;}
+
+.cs_ykb{ grid-row: 9/10; grid-column: 1/2; }
+
+.cs_camelrider{ grid-row: 9/10; grid-column: 2/3; }
+/* END of Cross-stitch gallery image classes */
+
+
+/* crochet grid */
+.grid2 {
+    display: grid;
+    grid-template-columns: 140px 140px;
+    grid-template-rows: 200px 200px auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 15px;
+    justify-content: start;
+}
+
+.cb_p { grid-row: 1; grid-column: 1/3}
+.crochet_bag{ grid-row: 2; grid-column: 1/2;}
+
+.crochet_waterbottle{ grid-row: 2; grid-column: 2/3;}
+.cwb_p { grid-row: 3; grid-column: 1/3 }
+
+
+
+
+
+
+
+
+
+
+
+
+#formborder{
+    margin: 50px;
+    border:  groove darkgoldenrod;
+    background-color: lightgoldenrodyellow;
+}
+#formcontents{
+    padding: 10px;
+}
+
+footer {
+    background-color: #6492B2;
+    color: white;
+    padding: 50 px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+footer p{
+    padding: 10px;
+    
+
+}
+
+
+
+
+
+/*   CSS FOR tablets SCREENS - */
+
+@media screen and (min-width: 450px){ 
+
+    /* crochet grid */
+.grid2 {
+    display: grid;
+    grid-template-columns: 140px 140px;
+    grid-template-rows: auto;
+    grid-column-gap: 70px;
+    grid-row-gap: 5px;
+    justify-content: start;
+}
+
+.cb_p { grid-column: 1/2;}
+.crochet_bag{ grid-column: 2/3; }
+
+.crochet_waterbottle{ grid-column: 1/2; }
+.cwb_p { grid-column: 2/3; }
+    
+    /* add revisions to above code here  */
+}
+
+
+
+
+
+
+                /*   CSS FOR LARGE SCREENS - */
+
+@media screen and (min-width: 800px){ 
+    
+    /* add revisions to above code here  */
+
+}
+
+
+
+/*   CSS TO FOR REDUCED MOTION PREFERENCES - little iffy here */
+
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
+
+    .skip a{
+        -webkit-transition: none;
+        transition: none;
+    }
+
+    /*Turn off parallax -- copied this from hw 4? */
+    header{
+        background-attachment: initial;
+    }
+    #logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        animation-name: none;
+        animation-duration: none;
+    }
+  
+}
