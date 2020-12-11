@@ -153,51 +153,46 @@ p {
 
 
 
+
+
+
+
 /* !!!!!cross-stitch gallery!!!!!!!! */
 
 .grid1 {
     display: grid;
-    grid-template-columns: 140px 140px;
+    grid-template-columns: 180px 180px;
     grid-template-rows: repeat(12, auto);
-    grid-column-gap: 70px;
+    grid-column-gap: 5px;
     grid-row-gap: 5px;
-    justify-content: start;
+    justify-content: flex-start;
+    margin: 0px auto;
 }
 
 .cs_chickens{ grid-column: 1/2; grid-row: 1/2; }
-
 .cs_mayan_numbers{ grid-column: 2/3; grid-row: 1/3; }
-
 .cs_peacock_kit{ grid-row: 2/4; grid-column: 1/2; }
-
 .cs_damaskpattern{ grid-row: 3/4; grid-column: 2/3; }
-
-.cs_ecs_sampler{ grid-row: 4/5; grid-column: 1; 
+.cs_ecs_sampler{ grid-row: 4/5; grid-column: 1/3; 
     min-height: 160px;}
-.cs_ecs_sampler img {width: 370px;}
-
+.cs_ecs_sampler img {width: 320px;}
 .cs_mondrian{ grid-row: 5/6; grid-column: 1/2; }
-
 .cs_flowervase{ grid-row: 5/7; grid-column: 2/3; }
-
 .cs_stork{ grid-row: 6/7; grid-column: 1/2; }
-
 .cs_queenofhearts{ grid-row: 7/9; grid-column: 1/3; }
-.cs_queenofhearts img{width: 370px;}
-
-.cs_swallow2{ grid-row: 10/11; grid-column: 1/3; }
-.cs_swallow2 img{width: 370px;}
-
+.cs_queenofhearts img{width: 350px;}
 .cs_ykb{ grid-row: 9/10; grid-column: 1/2; }
+.cs_camelrider{ grid-row: 9/10; grid-column: 2/3;}
+.cs_swallow2{ grid-row: 10/11; grid-column: 1/3; }
+.cs_swallow2 img{width: 350px;}
 
-.cs_camelrider{ grid-row: 9/10; grid-column: 2/3; }
 /* END of Cross-stitch gallery image classes */
 
 
 /* crochet grid */
 .grid2 {
     display: grid;
-    grid-template-columns: 140px 140px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 200px auto;
     grid-column-gap: 25px;
     grid-row-gap: 15px;
@@ -212,15 +207,6 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
 #formborder{
     margin: 50px;
     border:  groove darkgoldenrod;
@@ -231,7 +217,7 @@ p {
 }
 
 footer {
-    background-color: #6492B2;
+    background-color: #005482;
     color: white;
     padding: 50 px;
     margin-top: 20px;
@@ -240,48 +226,254 @@ footer {
 
 footer p{
     padding: 10px;
-    
+}
 
+
+.parallax {
+    background-image: url("../images/Western_Union.jpg");
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#formplate {
+    height: 500px;
 }
 
 
 
 
 
-/*   CSS FOR tablets SCREENS - */
 
-@media screen and (min-width: 450px){ 
+
+
+
+/*   CSS FOR tablets SCREENS  CSS FOR tablets SCREENS  - */
+/*   CSS FOR tablets SCREENS  CSS FOR tablets SCREENS  - */
+/*   CSS FOR tablets SCREENS  CSS FOR tablets SCREENS  - */
+/*   CSS FOR tablets SCREENS  CSS FOR tablets SCREENS  - */
+/*   CSS FOR tablets SCREENS  CSS FOR tablets SCREENS  - */
+/*   CSS FOR tablets SCREENS  CSS FOR tablets SCREENS  - */
+/*   CSS FOR tablets SCREENS  CSS FOR tablets SCREENS  - */
+/*   CSS FOR tablets SCREENS  CSS FOR tablets SCREENS  - */
+/*   CSS FOR tablets SCREENS  CSS FOR tablets SCREENS  - */
+
+@media screen and (min-width: 650px){ 
+    img {
+        width: 200px;
+    }
+    
+    .dicetray1 {margin: 0px 5px 0px 30px;}
+    .dicetray2 {margin: 0px 30px 0px 5px;}
 
     /* crochet grid */
-.grid2 {
-    display: grid;
-    grid-template-columns: 140px 140px;
-    grid-template-rows: auto;
-    grid-column-gap: 70px;
-    grid-row-gap: 5px;
-    justify-content: start;
-}
-
-.cb_p { grid-column: 1/2;}
-.crochet_bag{ grid-column: 2/3; }
-
-.crochet_waterbottle{ grid-column: 1/2; }
-.cwb_p { grid-column: 2/3; }
+    .grid2 {
+        display: grid;
+        grid-template-columns: 150px 2fr 150px;
+        grid-template-rows: auto;
+        grid-column-gap: 40px;
+        grid-row-gap: 5px;
+        justify-content: start;
+    }
     
+    .cb_p { grid-row: 1; grid-column: 1/3;}
+    .crochet_bag{ grid-row: 1; grid-column: 3/4; width: 150px; margin-right: 15px;}
+
+    .crochet_waterbottle{ grid-row: 2; grid-column: 1/2; width: 150px; }
+    .cwb_p { grid-row: 2; grid-column: 2/4; }
+    
+
+    .grid1 {
+        display: grid;
+        margin: 0px 10px;
+        grid-template-columns: 210px 210px 210px;
+        grid-template-rows: repeat(6, auto);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        justify-content: flex-start;
+    }
+    .grid1 img{width: 200px;}
+
+    .cs_chickens{ grid-row: 1; grid-column: 1; }
+    .cs_camelrider{ grid-row: 1; grid-column: 2;}
+    .cs_stork{ grid-row: 1; grid-column: 3; }
+    
+    
+    .cs_peacock_kit{ grid-row: 2; grid-column: 1; }
+    .cs_mayan_numbers{ grid-row: 2; grid-column: 2; }
+    .cs_flowervase{ grid-row: 2; grid-column: 3; }
+    
+    .cs_ecs_sampler{ grid-row: 3; grid-column: 1/4; }
+    .cs_ecs_sampler img {width: 640px;}
+
+    .cs_damaskpattern{ grid-row: 4; grid-column: 1; }
+    .cs_mondrian{ grid-row: 4; grid-column: 2; }
+    .cs_ykb{ grid-row: 4; grid-column: 3; }
+    
+
+    
+    .cs_queenofhearts{ grid-row: 5; grid-column: 1/4; }
+    .cs_queenofhearts img { width: 640px;}
+    .cs_swallow2{ grid-row: 6; grid-column: 1/4; }
+    .cs_swallow2 img{width: 640px;}
+    
+    .cards {margin-bottom: 30px;}
+
     /* add revisions to above code here  */
 }
 
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
 
 
 
 
 
-                /*   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
+/*   CSS FOR LARGE SCREENS   CSS FOR LARGE SCREENS - */
 
 @media screen and (min-width: 800px){ 
-    
-    /* add revisions to above code here  */
+    img {
+        width: 260px;
+    }
 
+    .current_projects {
+        display: grid;
+        grid-template-columns: 300px auto 300px;
+        grid-template-rows: 40px 180px 115px 225px 40px 270px;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        margin-right: 20px;
+    }
+    
+    .playingcard    {grid-row: 1; grid-column: 1/4;}
+    .pcard          {grid-row: 2; grid-column: 3; margin-right: 15px; width: 270px;}
+    .pcardp1        {grid-row: 2; grid-column: 1/3;}
+    .pcardp2        {grid-row: 3; grid-column: 1/4;}
+    .pcardpattern   {grid-row: 4; grid-column: 1/2; width: 270px;}
+    .pcardp3        {grid-row: 4; grid-column: 2/4;}
+    .knittedsocks   {grid-row: 5; grid-column: 1/4;}
+    .ksocksp        {grid-row: 6; grid-column: 1/3; }
+    .ksocks         {grid-row: 6; grid-column: 3; width: 270px; margin-bottom: 30px; }
+
+
+    .dicetray1 {margin: 0px;}
+    .dicetray2 {margin: 0px;}
+
+    .woodgrid {
+        display: grid;
+        grid-template-columns: 300px auto 300px;
+        grid-template-rows: 20px 300px 20px 300px 20px 300px 20px 240px 300px ;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        justify-content: flex-start;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .woodgrid img {width: 270px;}
+    div.woodgrid h2{padding: 0px;}
+    .compostbin     {grid-row: 1;}
+    .compostbin     {grid-row: 2; grid-column: 1/2;}
+    .compostp       {grid-row: 2; grid-column: 2/4;}
+    
+    .workbench      {grid-row: 3; grid-column: 3;}
+    .benchp         {grid-row: 4; grid-column: 1/3;}
+    .bench          {grid-row: 4; grid-column: 3/4;}
+    
+    .ladder_plank   {grid-row: 5;}
+    .ladderplank    {grid-row: 6; grid-column: 1/2;}
+    .ladderp        {grid-row: 6; grid-column: 2/4;}
+    
+    .dicetrays      {grid-row: 7; grid-column: 3;}
+    .dicetray1p     {grid-row: 8; grid-column: 1/3;}
+    .dicetray1      {grid-row: 8; grid-column: 3/4;}
+    
+    .dicetray2      {grid-row: 9; grid-column: 1/2;}
+    .dicetray2p     {grid-row: 9; grid-column: 2/4;}
+    
+    .grid1 {
+        display: grid;
+        margin: 0px auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        justify-content: space-around;
+    }
+    .grid1 img{width: 220px;}
+    .cs_chickens{ grid-row: 1; grid-column: 1; }
+    .cs_camelrider{ grid-row: 1; grid-column: 2;}
+    .cs_stork{ grid-row: 1; grid-column: 3; }
+    
+    
+    .cs_peacock_kit{ grid-row: 2; grid-column: 1; }
+    .cs_mayan_numbers{ grid-row: 2; grid-column: 2; }
+    .cs_flowervase{ grid-row: 2; grid-column: 3; }
+    
+    .cs_ecs_sampler{ grid-row: 3; grid-column: 1/4; }
+    .cs_ecs_sampler img {width: 700px;}
+
+    .cs_damaskpattern{ grid-row: 4; grid-column: 1; }
+    .cs_mondrian{ grid-row: 4; grid-column: 2; }
+    .cs_ykb{ grid-row: 4; grid-column: 3; }
+    
+
+    .cs_queenofhearts{ grid-row: 5; grid-column: 1/4; }
+    .cs_queenofhearts img { width: 700px;}
+    .cs_swallow2{ grid-row: 6; grid-column: 1/4; }
+    .cs_swallow2 img{width: 700px;}
+    
+
+
+     /* crochet grid */
+     .grid2 {
+        display: grid;
+        grid-template-columns: 300px 2fr 300px;
+        grid-template-rows: auto;
+        grid-column-gap: 40px;
+        grid-row-gap: 5px;
+        justify-content: start;
+    }
+    
+    .cb_p { grid-row: 1; grid-column: 1/3;}
+    .crochet_bag{ grid-row: 1; grid-column: 3/4; width: 260px; margin-right: 15px;}
+
+    .crochet_waterbottle{ grid-row: 2; grid-column: 1/2; width: 290px; }
+    .cwb_p { grid-row: 2; grid-column: 2/4; }
+    
+   
+    .paper_grid {
+        display: grid;
+        grid-template-columns: 300px auto 300px;
+        grid-template-rows: 40px 270px 300px 20px 370px;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        margin-right: 20px;
+    }
+    
+    .origami   {grid-row: 1; grid-column: 1/4;}
+    .origami1   {margin-top: 15px; grid-row: 2; grid-column: 3;}
+    .origami_p1 {grid-row: 2; grid-column: 1/3;}
+    .origami2   {grid-row: 3; grid-column: 1/2;}
+    .origami_p2 {grid-row: 3; grid-column: 2/4;}
+    .cards_and_books {grid-row: 4; grid-column: 1/4;}
+    .cards_books_p  {margin-top: 20px; grid-row: 5; grid-column: 1/3;}
+    .cards_books    {margin-top: 20px; width: 250px; grid-row: 5; grid-column: 3;}
+
+
+
+    /* add revisions to above code here  */
 }
 
 
@@ -298,17 +490,9 @@ footer p{
         transition: none;
     }
 
-    /*Turn off parallax -- copied this from hw 4? */
-    header{
-        background-attachment: initial;
+    .parallax{
+        background-attachment: scroll;
     }
-    #logo{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        animation-name: none;
-        animation-duration: none;
-    }
+   
   
 }
